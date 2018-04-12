@@ -1,6 +1,6 @@
-<%= form_for(message) do |f| %>
-  <%= f.label :content, 'メッセージ' %>
+<%= form_for(task) do |f| %>
+  <%= f.label :content, 'タスク' %>
   <%= f.text_field :content %>
 
-  <%= f.submit '投稿' %>
+  <%= f.submit '作成' %>
 <% end %>
