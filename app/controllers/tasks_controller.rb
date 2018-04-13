@@ -10,7 +10,9 @@ class TasksController < ApplicationController
   end
 
   def new
+    
      @task = Task.new
+    
   end
 
   def create
@@ -41,6 +43,7 @@ class TasksController < ApplicationController
       flash.now[:danger] = 'Task は更新されませんでした'
       render :edit
     end
+    
     
   end
 
