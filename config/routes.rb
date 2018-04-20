@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   
   resources :users, only: [:index, :show, :new, :create]
 
-  resources :microposts, only: [:create, :destroy]
+  # resources :microposts, only: [:create, :destroy]
   
   resources :tasks
 end
